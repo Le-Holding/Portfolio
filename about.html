@@ -71,7 +71,7 @@
     <div class="container mt-5">
         <div class="row">
             <h3 class="md">About</h3>
-            <p>Hey, I am Mathias Casper Lynge Le-Holding</p>
+            <p id="subNameAge">Hey, I am Mathias Casper Lynge Le-Holding</p>
             <div class="col-md-3 offset-md text-center">
                     <img src="img/GetPersonaPhoto.jpeg" class="rounded-pill">
             </div>
@@ -123,5 +123,28 @@
     -->
        <!-- Light Switch -->
        <script src="switch.js"></script>
+       <script>
+        let x = ageCalculator(); 
+        document.getElementById("subNameAge").innerHTML = x;
+        
+        function ageCalculator(){
+            var dob = new Date("1986-11-01");
+            //calculate month difference from current date in time
+            var month_diff = Date.now() - dob.getTime();
+            
+            //convert the calculated difference in date format
+            var age_dt = new Date(month_diff); 
+            
+            //extract year from date    
+            var year = age_dt.getUTCFullYear();
+            
+            //now calculate the age of the user
+            var age = Math.abs(year - 1970);
+            
+            //display the calculated age
+            return document.getElementById("subNameAge").textContent += ` and I'm ${age} years.`;
+        }
+        
+            </script>
   </body>
 </html>

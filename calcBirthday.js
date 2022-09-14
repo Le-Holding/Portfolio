@@ -1,4 +1,7 @@
 ageCalculator("1986-11-01", "MathiasAge");
+ageCalculator("2017-04-03", "girlOneAge");
+ageCalculator("2019-08-27", "boyOneAge");
+ageCalculator("2015-05-30", "marriedAge");
 
 function ageCalculator(birth, elementId) {
     var dob = new Date(birth);
@@ -17,5 +20,5 @@ function ageCalculator(birth, elementId) {
     //display the calculated age
     const span = document.getElementById(elementId);
     const textnode = span.nextSibling;
-    textnode.insertData(1, `${age} `)
+    textnode.insertData(0, age)
 }

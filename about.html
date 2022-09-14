@@ -71,7 +71,7 @@
     <div class="container mt-5">
         <div class="row">
             <h3 class="md">About</h3>
-            <p id="subNameAge">Hey, I am Mathias Casper Lynge Le-Holding</p>
+            <p>I am Mathias Casper Lynge Le-Holding and I'm <span id="MathiasAge"> </span> years.</p>
             <div class="col-md-3 offset-md text-center">
                     <img src="img/GetPersonaPhoto.jpeg" class="rounded-pill">
             </div>
@@ -84,10 +84,10 @@
                         <br> 
                         <br> 
                         Back in 2014 I graduated with the degree <em>"Bachelor of Engineering (BEng) in Electrical, Electronic and Computer Engineering"</em> at Aarhus University. 
-                        In 2016 and from 2017 I have been working as System Developer first at IHP Systems and 
-                        secondly in Unik System Design where participate in developing applications for the legal profession. 
-                        At IHP System I did have more technical responsibility for our plastic sorting system supportet by RGB an near infrared cameres, 
-                        as well for our customer Bring in the postal industry and for our camera solution to register licenses plates at Wash World.
+                        In 2016 and from 2017 I have been working as System Developer first in IHP Systems and 
+                        secondly in Unik System Design and lastly with developing applications for the legal profession. 
+                        At IHP System I did also have more technical responsibility for our plastic sorting system, 
+                        as well for our customer Bring in the postal industry and for our camera system to register licenses plates at Wash World.
                     </P>
                 </div>
             </div>
@@ -124,11 +124,14 @@
        <!-- Light Switch -->
        <script src="switch.js"></script>
        <script>
-        let x = ageCalculator(); 
-        document.getElementById("subNameAge").innerHTML = x;
+        let x = ageCalculator("1986-11-01"); 
+        const span = document.getElementById("MathiasAge");
+        const textnode = span.nextSibling;
+        textnode.insertData(1, `${x} `)
+
         
-        function ageCalculator(){
-            var dob = new Date("1986-11-01");
+        function ageCalculator(birth){
+            var dob = new Date(birth);
             //calculate month difference from current date in time
             var month_diff = Date.now() - dob.getTime();
             
@@ -142,9 +145,8 @@
             var age = Math.abs(year - 1970);
             
             //display the calculated age
-            return document.getElementById("subNameAge").textContent += ` and I'm ${age} years.`;
+            return age;
         }
-        
-            </script>
+        </script>
   </body>
 </html>

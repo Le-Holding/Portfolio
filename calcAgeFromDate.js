@@ -18,7 +18,7 @@ function ageCalculator(birth, elementId) {
     var age = Math.abs(year - 1970);
 
     //display the calculated age
-    const span = document.getElementById(elementId);
-    const textnode = span.nextSibling;
+    const elementById = document.getElementById(elementId);
+    const textnode = elementById.nextSibling;
     textnode.insertData(0, age)
 }

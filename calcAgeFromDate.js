@@ -22,3 +22,5 @@ function ageCalculator(birth, elementId) {
     const textnode = elementById.nextSibling;
     textnode.insertData(0, age)
 }
+
+document.getElementById("year").innerHTML = new Date().getFullYear();

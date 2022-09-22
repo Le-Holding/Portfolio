@@ -1,57 +1,65 @@
 <!doctype html>
 <html lang="en">
-    <!--How it is build https://www.youtube.com/watch?v=MscGIBk68So&t=16s-->
-    <!--https://getbootstrap.com/docs/5.0/components/navs-tabs/-->
-  <head>
+<!--How it is build https://www.youtube.com/watch?v=MscGIBk68So&t=16s-->
+<!--https://getbootstrap.com/docs/5.0/components/navs-tabs/-->
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>My Portfolio</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container my-1">
         <!-- <div>
             <button type="button" class="btn btn-outline-primary" onclick="myFunction()">Switch mode</button>
         </div> -->
-              <!-- LIGHT SWITCH -->
-      <div class="d-flex">
-        <div class="form-check form-switch ms-auto mt-3 me-3">
-          <label class="form-check-label ms-3" for="lightSwitch">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-brightness-high"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-              />
-            </svg>
-          </label>
-          <input class="form-check-input" type="checkbox" id="lightSwitch" />
+        <!-- LIGHT SWITCH -->
+        <div class="d-flex">
+            <div class="form-check form-switch ms-auto mt-3 me-3">
+                <label class="form-check-label ms-3" for="lightSwitch">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+                </label>
+                <input class="form-check-input" type="checkbox" id="lightSwitch" />
+            </div>
+            <!-- Github profile Link -->
+            <div class="ms auto mt-3">
+                <!-- How to disable automatic links coloring with css style? -->
+                <a class="ms-0" href="https://github.com/Le-Holding" target="_blank"
+                    style="color:inherit; text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+            </div>
         </div>
-      </div>
-
     </div>
 
     <div class="container my-1" style="text-align: center">
         <h1>Mathias Casper Lynge Le-Holding</h1>
         <a href="mailto:mcll@tec.dk" type="button" class="btn btn-outline-primary">mcll@tec.dk</a>
         <p class="lead">
-            I'm a social person with a "Bachelor in Electrical Electronic and Computer Engineering" and 3 years of experience in system development.
+            I'm a social person with a "Bachelor in Electrical Electronic and Computer Engineering" and 3 years of
+            experience in system development.
         </p>
     </div>
 
     <div class="container">
         <nav>
-            <ul class="nav nav-pills nav-fill"> <!--justify-content-center-->
+            <ul class="nav nav-pills nav-fill">
+                <!--justify-content-center-->
                 <li class="nav-item">
                     <a href='/' class="nav-link">Home</a>
                 </li>
@@ -72,37 +80,51 @@
         <div class="row">
             <h3 class="md">About</h3>
             <div class="col-md-3 offset-md text-center">
-                    <p>I am Mathias Casper Lynge Le-Holding and I'm <span id="MathiasAge"> </span> years.</p>
-                    <img src="img/GetPersonaPhoto.jpeg" class="rounded-pill">
-                    <p>The image is a version of a younger me. Evil tongues would say five years younger.</p>
+                <p>I am Mathias Casper Lynge Le-Holding and I'm <span id="MathiasAge"> </span> years.</p>
+                <img src="img/GetPersonaPhoto.jpeg" class="rounded-pill">
+                <p>The image is a version of a younger me. Evil tongues would say five years younger.</p>
             </div>
             <div class="col-md offset-md-1 text-center">
                 <article class="container offset-md-1">
                     <p>
-                        Currently I am working with trainees, who wants to be qualified as a  <em>“computer technician specializing in programming”.</em>
+                        Currently I am working with trainees, who wants to be qualified as a <em>“computer technician
+                            specializing in programming”.</em>
                         My role is in between a manager and project leader.
-                        I am responsible for the task the trainees work on. I have to make sure that the trainees are qualified to continue their education in different school levels.
+                        I am responsible for the task the trainees work on. I have to make sure that the trainees are
+                        qualified to continue their education in different school levels.
                         <br>
                         <br>
-                        Back in 2014 I graduated with the degree <em>"Bachelor of Engineering (BEng) in Electrical, Electronic and Computer Engineering"</em> at Aarhus University.
+                        Back in 2014 I graduated with the degree <em>"Bachelor of Engineering (BEng) in Electrical,
+                            Electronic and Computer Engineering"</em> at Aarhus University.
                         In 2016 and from 2017 I have been working as System Developer first in IHP Systems and
                         secondly in Unik System Design and lastly with developing applications for the legal profession.
                         At IHP System I did also have more technical responsibility for our plastic sorting system,
-                        as well for our customer Bring in the postal industry and for our camera system to register licenses plates at Wash World.
+                        as well for our customer Bring in the postal industry and for our camera system to register
+                        licenses plates at Wash World.
                         <br>
                         <br>
-                        I'm married to my wife Anh and we have been married for <span id="marriedAge"></span> year. 
-                        Together we have two lovely kids in the age of <span id="girlOneAge"></span> and <span id="boyOneAge"></span> years old. 
-                        I use most of my spare time with family. When time and weather allow os, we do love canoeing, tent trip and together get into the nature.
+                        I'm married to my wife Anh and we have been married for <span id="marriedAge"></span> year.
+                        Together we have two lovely kids in the age of <span id="girlOneAge"></span> and <span
+                            id="boyOneAge"></span> years old.
+                        I use most of my spare time with family. When time and weather allow os, we do love canoeing,
+                        tent trip and together get into the nature.
                     </P>
                 </article>
             </div>
-            <!-- container mt-5 virker kun i index? -->
+        </div>
+    </div>
+    <div>
+        <p class="container mt-5" align="center"><iframe src="https://www.youtube-nocookie.com/embed/HgzGwKwLmgM?rel=0"
+                title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                width="860" height="570" allowfullscreen=""></iframe></p>
+    </div>
+    <!-- container mt-5 virker kun i index? -->
     <div class="container mt-5">
         <nav>
-            <ul class="nav nav-pills"> <!--justify-content-center-->
+            <ul class="nav nav-pills nav-fill">
+                <!--justify-content-center-->
                 <li class="nav-item">
-                <a href='/' class="nav-link">Home</a>
+                    <a href='/' class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href='#' class="nav-link active">About</a>
@@ -116,19 +138,24 @@
             </ul>
         </nav>
     </div>
-
+    <footer class="d-flex align-items-center justify-content-center">
+        <p>© <span id="year"></span> Mathias Casper Lynge Le-Holding</p>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-       <!-- Light Switch -->
-       <script src="switch.js"></script>
-       <script src="calcAgeFromDate.js"></script>
-  </body>
+    <!-- Light Switch -->
+    <script src="switch.js"></script>
+    <script src="calcAgeFromDate.js"></script>
+</body>
+
 </html>

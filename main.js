@@ -43,3 +43,5 @@ console.log("Added MyElement to custom element registry!");
 addCustomElement()
 
 //https://www.youtube.com/watch?v=j5Sl6vx_l1s
+//https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements
+//https://www.geeksforgeeks.org/html-dom-customelements-define-method/

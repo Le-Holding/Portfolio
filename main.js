@@ -2,7 +2,7 @@ class MyHeader extends HTMLElement {
     constructor() {
         // Always call super first in constructor
         super();
-    
+        this.attachShadow({mode: "open"})
         // write element functionality in here
       }
 
@@ -19,11 +19,12 @@ class MyHeader extends HTMLElement {
                 </div>
             </header>
             <script src="switch.js"></script>
-        `
+        `;
     }
 }
 
-customElements.define('my-header', MyHeader)
+window.customElements.define('my-header', MyHeader);
+document.createElement("my-header");
 
 class MyFooter extends HTMLElement {
     connectedCallBack(){

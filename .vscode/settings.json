@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "BootstrapPortfolioWebsite"
+    "liveServer.settings.multiRootWorkspaceName": "BootstrapPortfolioWebsite",
+    "liveServer.settings.port": 5501
 }

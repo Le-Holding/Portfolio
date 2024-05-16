@@ -12,8 +12,6 @@
         <title>Advosys</title>
 </head>
 <body>
-  <my-header></my-header>
-  <my-footer></my-footer>
   <header>
 
     <div class="container my-1">
@@ -42,6 +40,10 @@
       </div>
     </div>
   </header>
+  Test  
+  <x-foo-shadowdom></x-foo-shadowdom>
+  <my-header><p>Test Header</p></my-header>
+  <my-footer></my-footer>
 
     <div class="container mt-5">
         <h3>Previous Projects</h3>
@@ -87,5 +89,33 @@
   </script> -->
     <script src="switch.js"></script>
     <script type=module src="main.js"></script>
+
+
+    <a href="https://www.youtube.com/watch?v=cccM4vrFuTs">How to use the Shadow Root DOM - Build Better Chrome Extensions</a>
+    <div class="div div-one">This is a div</div>
+
+    <div class="div div-two">This is another div</div>
+
+    <script>
+      var host = document.querySelector('.div-two');
+      var root = host.attachShadow({mode: 'open'});
+      var div = document.createElement('div');
+      div.className = 'root-class';
+      div.innerHTML = 'This is my shadow root';
+      div.innerHTML
+
+
+      root.appendChild(div);
+    </script>
+    <style>
+      .div{
+  border:3px solid red;
+    margin:10px;
+  padding:10px;
+  width:200px;
+}
+    </style>
+    <script src="calcAgeFromDate.js"></script>
+
   </body>
   </html>

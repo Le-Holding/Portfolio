@@ -1,3 +1,4 @@
+document.getElementById("year").innerHTML = new Date().getFullYear();
 ageCalculator("1986-11-01", "MathiasAge");
 ageCalculator("2017-04-03", "girlOneAge");
 ageCalculator("2019-08-27", "boyOneAge");
@@ -22,5 +23,3 @@ function ageCalculator(birth, elementId) {
     const textnode = elementById.nextSibling;
     textnode.insertData(0, age)
 }
-
-document.getElementById("year").innerHTML = new Date().getFullYear();
